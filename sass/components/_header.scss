@@ -1,0 +1,118 @@
+.header{
+    background-color: #101010;
+}
+
+.header__container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and(min-width: 375px) {
+        width: 375px;
+    }
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+    &::before{
+        content: '';
+        display: block;
+        background-image: url('../images/svg/logo.svg');
+        height: 57px;
+        width: 46px;
+    }
+}
+
+.header__menu-btn{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+
+    .header__icon-menu-btn{
+        width: 30px;
+        height: 30px;
+        fill: #FFFFFF;
+    }
+}
+
+.header__wrap{
+    display: none;
+
+    .header__menu-btn:focus + &,
+    .header__menu-btn:hover + & {
+        position: absolute;
+        right: 24px;
+        bottom: -220px;
+        display: block;
+        overflow: hidden;
+        background-color: #000000;
+        box-shadow: 0px -2px 9px 5px #7F1CFC;
+        padding-bottom: 20px;
+        border-radius: 30px 0px 30px 30px;
+    }
+}
+
+.header__nav{
+    margin-bottom: 20px;
+}
+
+.header__link{
+    display: block;
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    transition: box-shadow 200ms linear, background-color 200ms linear;
+
+    &:focus,
+    &:hover{
+        background-color: #7F1CFC;
+        box-shadow: -3px -1px 8px 7px rgba(24,81,84,0.45) inset;
+    }
+}
+
+.header__btn-wallet{
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #2C2D31;
+    background-color: #52FFE0;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: box-shadow 200ms linear, background-color 200ms linear, color 200ms linear;
+
+    &:hover{
+        box-shadow: -3px -1px 8px 7px rgba(24,81,84,0.45) inset;
+        background-color: #7F1CFC;
+        color: #fff;
+    }
+}

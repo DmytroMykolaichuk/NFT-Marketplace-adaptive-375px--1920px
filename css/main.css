@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "BebasNeueBold";
+  src: url("../fonts/BebasNeueBold.woff") format("woff");
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Red Rose", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  background-color: #101010;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.header {
+  background-color: #101010;
+}
+
+.header__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 375px) {
+  .header__container {
+    width: 375px;
+  }
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-family: "Gilroy-ExtraBold", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.2222222222;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.logo::before {
+  content: "";
+  display: block;
+  background-image: url("../images/svg/logo.svg");
+  height: 57px;
+  width: 46px;
+}
+
+.header__menu-btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+.header__menu-btn .header__icon-menu-btn {
+  width: 30px;
+  height: 30px;
+  fill: #FFFFFF;
+}
+
+.header__wrap {
+  display: none;
+}
+.header__menu-btn:focus + .header__wrap, .header__menu-btn:hover + .header__wrap {
+  position: absolute;
+  right: 24px;
+  bottom: -220px;
+  display: block;
+  overflow: hidden;
+  background-color: #000000;
+  -webkit-box-shadow: 0px -2px 9px 5px #7F1CFC;
+          box-shadow: 0px -2px 9px 5px #7F1CFC;
+  padding-bottom: 20px;
+  border-radius: 30px 0px 30px 30px;
+}
+
+.header__nav {
+  margin-bottom: 20px;
+}
+
+.header__link {
+  display: block;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  -webkit-transition: background-color 200ms linear, -webkit-box-shadow 200ms linear;
+  transition: background-color 200ms linear, -webkit-box-shadow 200ms linear;
+  transition: box-shadow 200ms linear, background-color 200ms linear;
+  transition: box-shadow 200ms linear, background-color 200ms linear, -webkit-box-shadow 200ms linear;
+}
+.header__link:focus, .header__link:hover {
+  background-color: #7F1CFC;
+  -webkit-box-shadow: -3px -1px 8px 7px rgba(24, 81, 84, 0.45) inset;
+          box-shadow: -3px -1px 8px 7px rgba(24, 81, 84, 0.45) inset;
+}
+
+.header__btn-wallet {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #2C2D31;
+  background-color: #52FFE0;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-transition: background-color 200ms linear, color 200ms linear, -webkit-box-shadow 200ms linear;
+  transition: background-color 200ms linear, color 200ms linear, -webkit-box-shadow 200ms linear;
+  transition: box-shadow 200ms linear, background-color 200ms linear, color 200ms linear;
+  transition: box-shadow 200ms linear, background-color 200ms linear, color 200ms linear, -webkit-box-shadow 200ms linear;
+}
+.header__btn-wallet:hover {
+  -webkit-box-shadow: -3px -1px 8px 7px rgba(24, 81, 84, 0.45) inset;
+          box-shadow: -3px -1px 8px 7px rgba(24, 81, 84, 0.45) inset;
+  background-color: #7F1CFC;
+  color: #fff;
+}
+
+.hero {
+  padding-top: 65px;
+  padding-bottom: 80px;
+  background-color: #101010;
+}
+
+.hero__text {
+  display: block;
+  font-family: "Monument Extended";
+  font-size: 18px;
+  line-height: 1.2222222222;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+.hero__title {
+  font-family: "Monument Extended";
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 294px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 51px;
+}
+
+.hero__btn-explore {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  text-align: center;
+  background-color: #52FFE0;
+  border-radius: 50px;
+  padding: 19px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: background-color 200ms linear, color 200ms linear, -webkit-box-shadow 200ms linear;
+  transition: background-color 200ms linear, color 200ms linear, -webkit-box-shadow 200ms linear;
+  transition: box-shadow 200ms linear, background-color 200ms linear, color 200ms linear;
+  transition: box-shadow 200ms linear, background-color 200ms linear, color 200ms linear, -webkit-box-shadow 200ms linear;
+}
+.hero__btn-explore:hover, .hero__btn-explore:focus {
+  -webkit-box-shadow: -3px -1px 8px 7px rgba(24, 81, 84, 0.45) inset;
+          box-shadow: -3px -1px 8px 7px rgba(24, 81, 84, 0.45) inset;
+  background-color: #7F1CFC;
+  color: #fff;
+}
+
+.hero__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__man {
+  position: relative;
+  margin-left: 57px;
+  margin-right: 52px;
+}
+
+.hero__man--second {
+  position: absolute;
+  left: 0;
+  top: 34px;
+}
+
+.hero__man--third {
+  position: absolute;
+  left: 0;
+  top: 68px;
+}
+
+.hero__arrow {
+  position: absolute;
+  bottom: 49px;
+  left: 20px;
+  width: 95px;
+  height: 74px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.hero__statistics-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.hero__statistics-number {
+  font-family: "Monument Extended";
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: end;
+  color: #fff;
+}
+
+.hero__statistics-text {
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: #818698;
+}/*# sourceMappingURL=main.css.map */
