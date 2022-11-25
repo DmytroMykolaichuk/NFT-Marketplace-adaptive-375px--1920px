@@ -16,13 +16,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans&family=Red+Hat+Display:wght@500;600&family=Red+Rose:wght@400;700&display=swap" rel="stylesheet">
         <link href="//db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended" rel="stylesheet" type="text/css"/>
         <link href="//db.onlinewebfonts.com/c/99501fdab737541e9315ceaf9229370f?family=Monument+Extended" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container header__container" >
             <a href="./index.html" class="logo" class="logo">Qeeb</a>
-            <button class="header__menu-btn">
+            <button class="header__menu-btn" type="button">
                 <svg class="header__icon-menu-btn">
                     <use href="./images/icons.svg#menu"></use>
                 </svg>
@@ -30,8 +32,8 @@
             <div class="header__wrap">
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item"><a href="#" class="header__link">Explore</a></li>
-                        <li class="header__item"><a href="#" class="header__link">Collections</a></li>
+                        <li class="header__item"><a href="#explore" class="header__link">Explore</a></li>
+                        <li class="header__item"><a href="#collections" class="header__link">Collections</a></li>
                         <li class="header__item"><a href="#" class="header__link">Creators</a></li>
                         <li class="header__item"><a href="#" class="header__link">Blog</a></li>
                     </ul>
@@ -45,19 +47,18 @@
             <div class="container">
                 <span class="hero__text">NFT Marketplace</span>
                 <h1 class="hero__title">Collect rare digital artworks</h1>
-                <button class="hero__btn-explore">Explore</button>
+                <button class="hero__btn-explore" type="button">Explore</button>
                 <img src="./images/hero.png" alt="nft">
-                <div class="hero__wrap">
+                <div class="hero__wrap" id="explore">
                     <div class="hero__man">
                         <ul class="hero__man-list">
-                            <li class="hero__man__items--first"><img src="./images/man-first.png" width="50px" height="50px" alt=""></li>
-                            <li class="hero__man--second"><img src="./images/man-second.png" width="50px" height="50px" alt=""></li>
-                            <li class="hero__man--third"><img src="./images/man-third.png" width="50px" height="50px" alt=""></li>
+                            <li class="hero__man__items--first"><img src="./images/man-first.png" width="50px" height="50px" alt="avatar"></li>
+                            <li class="hero__man--second"><img src="./images/man-second.png" width="50px" height="50px" alt="avatar"></li>
+                            <li class="hero__man--third"><img src="./images/man-third.png" width="50px" height="50px" alt="avatar"></li>
                         </ul>
-                        <div class="hero__arrow"><img src="./images/arrow.png" alt="" class="hero__icon--arrow"></div>
+                        <div class="hero__arrow"><img src="./images/arrow.png" alt="arrow" class="hero__icon--arrow"></div>
                     </div>
                     <div class="hero__statistics">
-                </div>
                     <ul class="hero__statistics-list">
                         <li class="hero__statistics-item">
                             <b class="hero__statistics-number">50k</b>
@@ -75,6 +76,47 @@
                 </div>
             </div>
         </section>
+        <section class="popular" id="collections">
+            <div class="container">
+                <h2 class="popular__title">popular categories</h2>
+                <div class="slayder">
+                    <div class="slide">
+                        <div class="slide_thumb">
+                            <img src="./images/nft-games.png" alt="" ></div>
+                        <h3 class="slide__title">Games</h3>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_thumb">
+                            <img src="./images/nft-sports.png" alt="" ></div>
+                        <h3 class="slide__title">Sports</h3>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_thumb">
+                            <img src="./images/nft-metaverse.png" alt="" ></div>
+                        <h3 class="slide__title">Metaverse</h3>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_thumb">
+                            <img src="./images/nft-art.png" alt="" ></div>
+                        <h3 class="slide__title">Art</h3>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_thumb">
+                            <img src="./images/nft-music.png" alt="" ></div>
+                        <h3 class="slide__title">Music</h3>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_thumb">
+                            <img src="./images/nft-photography.png" alt="" ></div>
+                        <h3 class="slide__title">Photography</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/slayder.js"></script>
 </body>
 </html>

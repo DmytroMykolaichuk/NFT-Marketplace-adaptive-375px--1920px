@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Gilroy-ExtraBold";
   src: url("../fonts/Gilroy-ExtraBold.woff") format("woff");
@@ -45,13 +46,15 @@ body {
   background-color: #101010;
 }
 
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 375px) {
   .container {
     width: 375px;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -249,11 +252,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero__man {
   position: relative;
-  margin-left: 57px;
   margin-right: 52px;
 }
 
@@ -309,4 +314,78 @@ body {
   line-height: 1.25;
   text-align: center;
   color: #818698;
+}
+
+.popular {
+  margin-bottom: 80px;
+}
+
+.popular__title {
+  font-family: "Monument Extended";
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.slide {
+  margin-right: 30px;
+  max-width: 245px;
+  background: #2C2D31;
+  border-radius: 50px;
+  padding: 10px 10px 51px 10px;
+}
+
+.slide_thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 51px;
+  overflow: hidden;
+}
+
+.slide__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #7F1CFC;
+}
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 15px;
+  line-height: 20px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: #52FFE0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.25;
+  color: #52FFE0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }/*# sourceMappingURL=main.css.map */
