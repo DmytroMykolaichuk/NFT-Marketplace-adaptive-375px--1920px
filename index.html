@@ -1,363 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Qeeb</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans&family=Red+Hat+Display:wght@500;600&family=Red+Rose:wght@400;700&display=swap"
-            rel="stylesheet">
-        <link href="//db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended" rel="stylesheet"
-            type="text/css" />
-        <link href="//db.onlinewebfonts.com/c/99501fdab737541e9315ceaf9229370f?family=Monument+Extended" rel="stylesheet"
-            type="text/css" />
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-        <link rel="stylesheet" href="./css/main.min.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qeeb</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans&family=Red+Hat+Display:wght@500;600&family=Red+Rose:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/99501fdab737541e9315ceaf9229370f?family=Monument+Extended"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-    <body>
-        <header class="header">
-            <div class="container header__container">
-                <a href="./index.html" class="logo" class="logo">Qeeb</a>
-                <button class="header__menu-btn" type="button">
-                    <svg class="header__icon-menu-btn">
-                        <use href="./images/icons.svg#menu"></use>
-                    </svg>
-                </button>
-                <div class="header__wrap">
-                    <nav class="header__nav">
-                        <ul class="header__list">
-                            <li class="header__item"><a href="#explore" class="header__link">Explore</a></li>
-                            <li class="header__item"><a href="#collections" class="header__link">Collections</a></li>
-                            <li class="header__item"><a href="#creators" class="header__link">Creators</a></li>
-                            <li class="header__item"><a href="#blog" class="header__link">Blog</a></li>
-                        </ul>
-                    </nav>
-                    <button class="header__btn-wallet" type="button">Connect Wallet</button>
-                </div>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="./index.html" class="logo">Qeeb</a>
+        <button class="header__menu-btn" type="button">
+          <svg class="header__icon-menu-btn">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+        <div class="header__wrap">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item"><a href="#explore" class="header__link">Explore</a></li>
+              <li class="header__item"><a href="#collections" class="header__link">Collections</a></li>
+              <li class="header__item"><a href="#creators" class="header__link">Creators</a></li>
+              <li class="header__item"><a href="#blog" class="header__link">Blog</a></li>
+            </ul>
+          </nav>
+          <button class="header__btn-wallet" type="button">Connect Wallet</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <span class="hero__text">NFT Marketplace</span>
+          <h1 class="hero__title">Collect rare digital artworks</h1>
+          <button class="hero__btn-explore" type="button">Explore</button>
+          <img src="./images/hero.png" alt="nft" />
+          <div class="hero__wrap" id="explore">
+            <div class="hero__man">
+              <ul class="hero__man-list">
+                <li class="hero__man__items--first">
+                  <img src="./images/man-first.png" width="50" height="50" alt="avatar" />
+                </li>
+                <li class="hero__man--second">
+                  <img src="./images/man-second.png" width="50" height="50" alt="avatar" />
+                </li>
+                <li class="hero__man--third">
+                  <img src="./images/man-third.png" width="50" height="50" alt="avatar" />
+                </li>
+              </ul>
+              <div class="hero__arrow">
+                <img src="./images/arrow.png" alt="arrow" class="hero__icon--arrow" />
+              </div>
             </div>
-        </header>
-        <main>
-            <section class="hero">
-                <div class="container">
-                    <span class="hero__text">NFT Marketplace</span>
-                    <h1 class="hero__title">Collect rare digital artworks</h1>
-                    <button class="hero__btn-explore" type="button">Explore</button>
-                    <img src="./images/hero.png" alt="nft">
-                    <div class="hero__wrap" id="explore">
-                        <div class="hero__man">
-                            <ul class="hero__man-list">
-                                <li class="hero__man__items--first"><img src="./images/man-first.png" width="50px"
-                                        height="50px" alt="avatar"></li>
-                                <li class="hero__man--second"><img src="./images/man-second.png" width="50px" height="50px"
-                                        alt="avatar"></li>
-                                <li class="hero__man--third"><img src="./images/man-third.png" width="50px" height="50px"
-                                        alt="avatar"></li>
-                            </ul>
-                            <div class="hero__arrow"><img src="./images/arrow.png" alt="arrow" class="hero__icon--arrow">
-                            </div>
-                        </div>
-                        <div class="hero__statistics">
-                            <ul class="hero__statistics-list">
-                                <li class="hero__statistics-item">
-                                    <b class="hero__statistics-number">50k</b>
-                                    <p class="hero__statistics-text">Artwork</p>
-                                </li>
-                                <li class="hero__statistics-item">
-                                    <b class="hero__statistics-number">35k</b>
-                                    <p class="hero__statistics-text">Auction</p>
-                                </li>
-                                <li class="hero__statistics-item">
-                                    <b class="hero__statistics-number">23k+</b>
-                                    <p class="hero__statistics-text">Artist</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-            </section>
-            <section class="popular" id="collections">
-                <div class="container">
-                    <h2 class="popular__title">popular categories</h2>
-                    <div class="slayder">
-                        <div class="slide">
-                            <div class="slide__thumb">
-                                <img src="./images/nft-games.png" alt="nft-games">
-                            </div>
-                            <h3 class="slide__title">Games</h3>
-                        </div>
-                        <div class="slide">
-                            <div class="slide__thumb">
-                                <img src="./images/nft-sports.png" alt="nft-sports">
-                            </div>
-                            <h3 class="slide__title">Sports</h3>
-                        </div>
-                        <div class="slide">
-                            <div class="slide__thumb">
-                                <img src="./images/nft-metaverse.png" alt="nft-metaverse">
-                            </div>
-                            <h3 class="slide__title">Metaverse</h3>
-                        </div>
-                        <div class="slide">
-                            <div class="slide__thumb">
-                                <img src="./images/nft-art.png" alt="nft-art">
-                            </div>
-                            <h3 class="slide__title">Art</h3>
-                        </div>
-                        <div class="slide">
-                            <div class="slide__thumb">
-                                <img src="./images/nft-music.png" alt="nft-music">
-                            </div>
-                            <h3 class="slide__title">Music</h3>
-                        </div>
-                        <div class="slide">
-                            <div class="slide__thumb">
-                                <img src="./images/nft-photography.png" alt="nft-photography">
-                            </div>
-                            <h3 class="slide__title">Photography</h3>
-                        </div>
-                    </div>
+            <div class="hero__statistics">
+              <ul class="hero__statistics-list">
+                <li class="hero__statistics-item">
+                  <b class="hero__statistics-number">50k</b>
+                  <p class="hero__statistics-text">Artwork</p>
+                </li>
+                <li class="hero__statistics-item">
+                  <b class="hero__statistics-number">35k</b>
+                  <p class="hero__statistics-text">Auction</p>
+                </li>
+                <li class="hero__statistics-item">
+                  <b class="hero__statistics-number">23k+</b>
+                  <p class="hero__statistics-text">Artist</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular" id="collections">
+        <div class="container">
+          <h2 class="popular__title">popular categories</h2>
+          <div class="slayder">
+            <div class="slide">
+              <div class="slide__thumb">
+                <img src="./images/nft-games.png" alt="nft-games" />
+              </div>
+              <h3 class="slide__title">Games</h3>
+            </div>
+            <div class="slide">
+              <div class="slide__thumb">
+                <img src="./images/nft-sports.png" alt="nft-sports" />
+              </div>
+              <h3 class="slide__title">Sports</h3>
+            </div>
+            <div class="slide">
+              <div class="slide__thumb">
+                <img src="./images/nft-metaverse.png" alt="nft-metaverse" />
+              </div>
+              <h3 class="slide__title">Metaverse</h3>
+            </div>
+            <div class="slide">
+              <div class="slide__thumb">
+                <img src="./images/nft-art.png" alt="nft-art" />
+              </div>
+              <h3 class="slide__title">Art</h3>
+            </div>
+            <div class="slide">
+              <div class="slide__thumb">
+                <img src="./images/nft-music.png" alt="nft-music" />
+              </div>
+              <h3 class="slide__title">Music</h3>
+            </div>
+            <div class="slide">
+              <div class="slide__thumb">
+                <img src="./images/nft-photography.png" alt="nft-photography" />
+              </div>
+              <h3 class="slide__title">Photography</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="collection">
+        <div class="container">
+          <h2 class="collection_title">top collection</h2>
+          <ul class="collection__list">
+            <li class="collection__item">
+              <div class="collection__thumb">
+                <img src="./images/NFT-Worlds.png" alt="nft" />
+                <svg class="collection__number-icon" width="34" height="34">
+                  <use href="./images/icons.svg#seven"></use>
+                </svg>
+              </div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">NFT Worlds</h3>
+                  <span class="collection__vol">Floor: 0.80ETH</span>
                 </div>
-            </section>
-            <section class="collection">
-                <div class="container">
-                    <h2 class="collection_title">top collection</h2>
-                    <ul class="collection__list">
-                        <li class="collection__item">
-                            <div class="collection__thumb">
-                                <img src="./images/NFT Worlds.png" alt="nft">
-                                <svg class="collection__number-icon" width="34" height="34">
-                                    <use href="./images/icons.svg#seven"></use>
-                                </svg>
-                            </div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">NFT Worlds</h3>
-                                    <span class="collection__vol">Floor: 0.80ETH</span>
-                                </div>
-                                <div class="collection__volume">
-                                    <span class="collection__crypto">7.9k ETH</span>
-                                    <span class="collection__vol">$8.4M</span>
-                                    <span class="collection__growth">+294.7%</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="collection__item">
-                            <div class="collection__thumb"><img src="./images/Etherpilots.png" alt="nft">
-                            <svg class="collection__number-icon" width="34" height="34">
-                                <use href="./images/icons.svg#ten"></use>
-                            </svg></div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">Etherpilots</h3>
-                                    <span class="collection__vol">Floor: 0.70ETH</span>
-                                </div>
-                                <div class="collection__volume"><span class="collection__crypto">7.5k ETH</span><span class="collection__vol">$8.4M</span><span class="collection__growth">+294.7%</span></div>
-                            </div>
-                        </li>
-                        <li class="collection__item">
-                            <div class="collection__thumb"><img src="./images/Mineblowings.png" alt="nft">
-                            <svg class="collection__number-icon" width="34" height="34">
-                                <use href="./images/icons.svg#three"></use>
-                            </svg></div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">Mineblowings</h3>
-                                    <span class="collection__vol">Floor: 0.90ETH</span>
-                                </div>
-                                <div class="collection__volume"><span class="collection__crypto">6.9k ETH</span><span class="collection__vol">$8.4M</span><span class="collection__growth">+294.7%</span></div>
-                            </div>
-                        </li>
-                        <li class="collection__item collection__item--desktop">
-                            <div class="collection__thumb"><img src="./images/Super Worlds.png" alt="nft"></div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">Super Worlds</h3>
-                                    <span class="collection__vol">Floor: 0.08ETH</span>
-                                </div>
-                                <div class="collection__volume"><span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span><span class="collection__growth">+294.7%</span></div>
-                            </div>
-                        </li>
-                        <li class="collection__item collection__item--desktop">
-                            <div class="collection__thumb"><img src="./images/Kive Core.png" alt="nft"></div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">Kive Core</h3>
-                                    <span class="collection__vol">Floor: 0.85ETH</span>
-                                </div>
-                                <div class="collection__volume"><span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span><span class="collection__growth">+294.7%</span></div>
-                            </div>
-                        </li>
-                        <li class="collection__item collection__item--desktop">
-                            <div class="collection__thumb"><img src="./images/NFT Flow.png" alt="nft"></div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">NFT Flow</h3>
-                                    <span class="collection__vol">Floor: 0.86ETH</span>
-                                </div>
-                                <div class="collection__volume"><span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span><span class="collection__growth">+294.7%</span></div>
-                            </div>
-                        </li>
-                        <li class="collection__item collection__item--desktop">
-                            <div class="collection__thumb"><img src="./images/Etherpilots.png" alt="nft"></div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">Bidether</h3>
-                                    <span class="collection__vol">Floor: 0.08ETH</span>
-                                </div>
-                                <div class="collection__volume"><span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span><span class="collection__growth">+294.7%</span></div>
-                            </div>
-                        </li>
-                        <li class="collection__item collection__item--desktop">
-                            <div class="collection__thumb"><img src="./images/Super Worlds.png" alt="nft"></div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">Varipack</h3>
-                                    <span class="collection__vol">Floor: 0.10ETH</span>
-                                </div>
-                                <div class="collection__volume"><span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span><span class="collection__growth">+294.7%</span></div>
-                            </div>
-                        </li>
-                        <li class="collection__item collection__item--desktop">
-                            <div class="collection__thumb"><img src="./images/Kive Core.png" alt="nft"></div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">Nether</h3>
-                                    <span class="collection__vol">Floor: 0.18ETH</span>
-                                </div>
-                                <div class="collection__volume"><span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span><span class="collection__growth">+294.7%</span></div>
-                            </div>
-                        </li>
-                        <li class="collection__item collection__item--desktop">
-                            <div class="collection__thumb"><img src="./images/NFT Flow.png" alt="nft"></div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">Moonther</h3>
-                                    <span class="collection__vol">Floor: 0.65ETH</span>
-                                </div>
-                                <div class="collection__volume"><span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span><span class="collection__growth">+294.7%</span></div>
-                            </div>
-                        </li>
-                        <li class="collection__item collection__item--desktop">
-                            <div class="collection__thumb"><img src="./images/Mineblowings.png" alt="nft"></div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">Proof Corn</h3>
-                                    <span class="collection__vol">Floor: 0.40ETH</span>
-                                </div>
-                                <div class="collection__volume"><span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span><span class="collection__growth">+294.7%</span></div>
-                            </div>
-                        </li>
-                        <li class="collection__item collection__item--desktop">
-                            <div class="collection__thumb"><img src="./images/NFT Worlds.png" alt="nft"></div>
-                            <div class="collection__text">
-                                <div class="collection__name">
-                                    <h3 class="collection__name-title">Parallel</h3>
-                                    <span class="collection__vol">Floor: 0.30ETH</span>
-                                </div>
-                                <div class="collection__volume"><span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span><span class="collection__growth">+294.7%</span></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <button type="button" class="collection__btn">See All Collection</button>
+                <div class="collection__volume">
+                  <span class="collection__crypto">7.9k ETH</span>
+                  <span class="collection__vol">$8.4M</span>
+                  <span class="collection__growth">+294.7%</span>
                 </div>
-            </section>
-            <secnion class="trending" id="creators">
-                <div class="container">
-                    <h2 class="trending__title">Trending nfts</h2>
-                    <div class="slayder">
-                        <div class="slide__trending">
-                            <div class="slide__thumb-trending"><img src="./images/boy-nft.png" alt="nft"></div>
-                            <div class="slide__background">
-                                <h3 class="slide__title-trending">Rare Crypto</h3>
-                                <span class="slide__kive">#QA5200 The Kive</span>
-                                <div class="slide__info">
-                                    <div class="slide__price">Price
-                                        <span class="slide__eth">0.03 ETH</span>
-                                    </div>
-                                    <div class="slide__bild">Highest Bid
-                                        <span class="slide__eth">0.07 ETH</span>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        <div class="slide__trending">
-                            <div class="slide__thumb-trending"><img src="./images/boy2-nft.png" alt="nft"></div>
-                            <div class="slide__background">
-                                <h3 class="slide__title-trending">Kive Boy</h3>
-                                <span class="slide__kive">#QA5200 The Kive</span>
-                                <div class="slide__info">
-                                    <div class="slide__price">Price
-                                        <span class="slide__eth">0.03 ETH</span>
-                                    </div>
-                                    <div class="slide__bild">Highest Bid
-                                        <span class="slide__eth">0.07 ETH</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide__trending">
-                            <div class="slide__thumb-trending"><img src="./images/boy3-nft.png" alt="nft"></div>
-                            <div class="slide__background">
-                                <h3 class="slide__title-trending">Kive Boy</h3>
-                                <span class="slide__kive">#QA5200 The Kive</span>
-                                <div class="slide__info">
-                                    <div class="slide__price">Price
-                                        <span class="slide__eth">0.03 ETH</span>
-                                    </div>
-                                    <div class="slide__bild">Highest Bid
-                                        <span class="slide__eth">0.07 ETH</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide__trending">
-                            <div class="slide__thumb-trending"><img src="./images/boy4-nft.png" alt="nft"></div>
-                            <div class="slide__background">
-                                <h3 class="slide__title-trending">Kive Boy</h3>
-                                <span class="slide__kive">#QA5200 The Kive
-                                    <span class="slide__eth"></span>
-                                </span>
-                                <div class="slide__info">
-                                    <div class="slide__price">Price
-                                        <span class="slide__eth">0.03 ETH</span>
-                                    </div>
-                                    <div class="slide__bild">Highest Bid
-                                        <span class="slide__eth">0.07 ETH</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </li>
+            <li class="collection__item">
+              <div class="collection__thumb">
+                <img src="./images/Etherpilots.png" alt="nft" />
+                <svg class="collection__number-icon" width="34" height="34">
+                  <use href="./images/icons.svg#ten"></use>
+                </svg>
+              </div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">Etherpilots</h3>
+                  <span class="collection__vol">Floor: 0.70ETH</span>
                 </div>
-            </secnion>
-            <section class="blog" id="blog">
-                <div class="container">
-                    <h2 class="blog__title">Blog</h2>
-                    <div class="blog__thumb"><img src="./images/blog-mobile.png" alt="banner"></div>
-                    <div class="blog__info">
-                        <span class="blog__sound">Sound Record</span>
-                        <span class="blog__name">John Doe • 19 Jan 2022</span>
-                    </div>
-                    <p class="blog__text">Gesture for the people and the culture</p>
-                    <button class="blog__btn">
-                        Read More
-                        <svg class="blog__icon" width="16" height="16">
-                            <use href="./images/icons.svg#read-more"></use>
-                        </svg>
-                    </button>
+                <div class="collection__volume">
+                  <span class="collection__crypto">7.5k ETH</span><span class="collection__vol">$8.4M</span
+                  ><span class="collection__growth">+294.7%</span>
                 </div>
-            </section>
-        </main>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script type="text/javascript" src="./js/slayder.js"></script>
-    </body>
+              </div>
+            </li>
+            <li class="collection__item">
+              <div class="collection__thumb">
+                <img src="./images/Mineblowings.png" alt="nft" />
+                <svg class="collection__number-icon" width="34" height="34">
+                  <use href="./images/icons.svg#three"></use>
+                </svg>
+              </div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">Mineblowings</h3>
+                  <span class="collection__vol">Floor: 0.90ETH</span>
+                </div>
+                <div class="collection__volume">
+                  <span class="collection__crypto">6.9k ETH</span><span class="collection__vol">$8.4M</span
+                  ><span class="collection__growth">+294.7%</span>
+                </div>
+              </div>
+            </li>
+            <li class="collection__item collection__item--desktop">
+              <div class="collection__thumb"><img src="./images/Super-Worlds.png" alt="nft" /></div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">Super Worlds</h3>
+                  <span class="collection__vol">Floor: 0.08ETH</span>
+                </div>
+                <div class="collection__volume">
+                  <span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span
+                  ><span class="collection__growth">+294.7%</span>
+                </div>
+              </div>
+            </li>
+            <li class="collection__item collection__item--desktop">
+              <div class="collection__thumb"><img src="./images/Kive-Core.png" alt="nft" /></div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">Kive Core</h3>
+                  <span class="collection__vol">Floor: 0.85ETH</span>
+                </div>
+                <div class="collection__volume">
+                  <span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span
+                  ><span class="collection__growth">+294.7%</span>
+                </div>
+              </div>
+            </li>
+            <li class="collection__item collection__item--desktop">
+              <div class="collection__thumb"><img src="./images/NFT-Flow.png" alt="nft" /></div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">NFT Flow</h3>
+                  <span class="collection__vol">Floor: 0.86ETH</span>
+                </div>
+                <div class="collection__volume">
+                  <span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span
+                  ><span class="collection__growth">+294.7%</span>
+                </div>
+              </div>
+            </li>
+            <li class="collection__item collection__item--desktop">
+              <div class="collection__thumb"><img src="./images/Etherpilots.png" alt="nft" /></div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">Bidether</h3>
+                  <span class="collection__vol">Floor: 0.08ETH</span>
+                </div>
+                <div class="collection__volume">
+                  <span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span
+                  ><span class="collection__growth">+294.7%</span>
+                </div>
+              </div>
+            </li>
+            <li class="collection__item collection__item--desktop">
+              <div class="collection__thumb"><img src="./images/Super-Worlds.png" alt="nft" /></div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">Varipack</h3>
+                  <span class="collection__vol">Floor: 0.10ETH</span>
+                </div>
+                <div class="collection__volume">
+                  <span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span
+                  ><span class="collection__growth">+294.7%</span>
+                </div>
+              </div>
+            </li>
+            <li class="collection__item collection__item--desktop">
+              <div class="collection__thumb"><img src="./images/Kive-Core.png" alt="nft" /></div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">Nether</h3>
+                  <span class="collection__vol">Floor: 0.18ETH</span>
+                </div>
+                <div class="collection__volume">
+                  <span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span
+                  ><span class="collection__growth">+294.7%</span>
+                </div>
+              </div>
+            </li>
+            <li class="collection__item collection__item--desktop">
+              <div class="collection__thumb"><img src="./images/NFT-Flow.png" alt="nft" /></div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">Moonther</h3>
+                  <span class="collection__vol">Floor: 0.65ETH</span>
+                </div>
+                <div class="collection__volume">
+                  <span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span
+                  ><span class="collection__growth">+294.7%</span>
+                </div>
+              </div>
+            </li>
+            <li class="collection__item collection__item--desktop">
+              <div class="collection__thumb"><img src="./images/Mineblowings.png" alt="nft" /></div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">Proof Corn</h3>
+                  <span class="collection__vol">Floor: 0.40ETH</span>
+                </div>
+                <div class="collection__volume">
+                  <span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span
+                  ><span class="collection__growth">+294.7%</span>
+                </div>
+              </div>
+            </li>
+            <li class="collection__item collection__item--desktop">
+              <div class="collection__thumb"><img src="./images/NFT-Worlds.png" alt="nft" /></div>
+              <div class="collection__text">
+                <div class="collection__name">
+                  <h3 class="collection__name-title">Parallel</h3>
+                  <span class="collection__vol">Floor: 0.30ETH</span>
+                </div>
+                <div class="collection__volume">
+                  <span class="collection__crypto">5.8k ETH</span><span class="collection__vol">$8.4M</span
+                  ><span class="collection__growth">+294.7%</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="collection__btn">See All Collection</button>
+        </div>
+      </section>
+      <section class="trending" id="creators">
+        <div class="container">
+          <h2 class="trending__title">Trending nfts</h2>
+          <div class="slayder">
+            <div class="slide__trending">
+              <div class="slide__thumb-trending"><img src="./images/boy-nft.png" alt="nft" /></div>
+              <div class="slide__background">
+                <h3 class="slide__title-trending">Rare Crypto</h3>
+                <span class="slide__kive">#QA5200 The Kive</span>
+                <div class="slide__info">
+                  <div class="slide__price">
+                    Price
+                    <span class="slide__eth">0.03 ETH</span>
+                  </div>
+                  <div class="slide__bild">
+                    Highest Bid
+                    <span class="slide__eth">0.07 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide__trending">
+              <div class="slide__thumb-trending"><img src="./images/boy2-nft.png" alt="nft" /></div>
+              <div class="slide__background">
+                <h3 class="slide__title-trending">Kive Boy</h3>
+                <span class="slide__kive">#QA5200 The Kive</span>
+                <div class="slide__info">
+                  <div class="slide__price">
+                    Price
+                    <span class="slide__eth">0.03 ETH</span>
+                  </div>
+                  <div class="slide__bild">
+                    Highest Bid
+                    <span class="slide__eth">0.07 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide__trending">
+              <div class="slide__thumb-trending"><img src="./images/boy3-nft.png" alt="nft" /></div>
+              <div class="slide__background">
+                <h3 class="slide__title-trending">Kive Boy</h3>
+                <span class="slide__kive">#QA5200 The Kive</span>
+                <div class="slide__info">
+                  <div class="slide__price">
+                    Price
+                    <span class="slide__eth">0.03 ETH</span>
+                  </div>
+                  <div class="slide__bild">
+                    Highest Bid
+                    <span class="slide__eth">0.07 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide__trending">
+              <div class="slide__thumb-trending"><img src="./images/boy4-nft.png" alt="nft" /></div>
+              <div class="slide__background">
+                <h3 class="slide__title-trending">Kive Boy</h3>
+                <span class="slide__kive"
+                  >#QA5200 The Kive
+                  <span class="slide__eth"></span>
+                </span>
+                <div class="slide__info">
+                  <div class="slide__price">
+                    Price
+                    <span class="slide__eth">0.03 ETH</span>
+                  </div>
+                  <div class="slide__bild">
+                    Highest Bid
+                    <span class="slide__eth">0.07 ETH</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog" id="blog">
+        <div class="container">
+          <h2 class="blog__title">Blog</h2>
+          <div class="blog__thumb"><img src="./images/blog-mobile.png" alt="banner" /></div>
+          <div class="blog__info">
+            <span class="blog__sound">Sound Record</span>
+            <span class="blog__name">John Doe • 19 Jan 2022</span>
+          </div>
+          <p class="blog__text">Gesture for the people and the culture</p>
+          <button class="blog__btn">
+            Read More
+            <svg class="blog__icon" width="16" height="16">
+              <use href="./images/icons.svg#read-more"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="download">
+        <div class="container">
+          <h2 class="download__title">Download Qeeb app to track your NFT portfolio and discover more</h2>
+          <a
+            href="https://www.apple.com/ua/app-store/"
+            class="download__app"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg class="download__app-icon" width="30" height="30">
+              <use href="./images/icons.svg#app"></use>
+            </svg>
+            App Store
+          </a>
+          <a
+            class="download__google"
+            href="https://pay.google.com/intl/uk_ua/about/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg class="download__google-icon" width="30" height="30">
+              <use href="./images/icons.svg#google"></use>
+            </svg>
+            Google Play
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <form class="footer__form">
+          <h2 class="footer__form-title">Sign Up to Receive Product Updates and More</h2>
+          <label class="footer__label">
+            <input type="email" class="footer__input" placeholder="youremail@gmail.com" name="email" />
+            <svg class="footer__input-icon" width="24" height="24">
+              <use href="./images/icons.svg#send"></use>
+            </svg>
+          </label>
+          <button type="submit" class="footer__form-btn">Send</button>
+        </form>
+        <address class="address">
+          <h2 class="address__title">Office</h2>
+          <a href="https://goo.gl/maps/8pqed2nRphVhpJ5W7" class="address__link"
+            >545, Street 11, Block F <br />California, U.S.A</a
+          >
+        </address>
+        <h2 class="footer__contact-title">Contact</h2>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item">
+            <a href="tel:+923023003215" class="footer__contact-link">+92 302 300 3215</a>
+          </li>
+          <li class="footer__contact-item">
+            <a class="footer__contact-link" href="mailto:ouraddress@email.com">ouraddress@email.com</a>
+          </li>
+        </ul>
+        <ul class="footer__policy">
+          <li class="footer_policy-item"><a class="footer__policy-link" href="#">Terms & Conditions</a></li>
+          <li class="footer_policy-item"><a class="footer__policy-link" href="#">Privacy</a></li>
+        </ul>
+        <ul class="footer__soc">
+          <li class="footer__soc-item">
+            <a href="" class="footer__soc-link">
+              <svg class="footer__soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__soc-item">
+            <a href="" class="footer__soc-link">
+              <svg class="footer__soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__soc-item">
+            <a href="" class="footer__soc-link">
+              <svg class="footer__soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#dribbble"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__soc-item">
+            <a href="" class="footer__soc-link">
+              <svg class="footer__soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copyright">Copyright 2022. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/slayder.js"></script>
+  </body>
 </html>
