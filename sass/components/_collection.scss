@@ -1,0 +1,113 @@
+.collection {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.collection_title {
+    font-family: 'Monument Extended';
+    font-size: 24px;
+    line-height: calc(36 / 24);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    @media screen and(max-width: 1919px) {
+        max-width: 206px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+    }
+}
+
+.collection__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.collection__item {
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    background-color: #2C2D31;
+    border-radius: 20px;
+}
+
+.collection__number-icon {
+    position: absolute;
+    top: 10px;
+    left: 85px;
+}
+
+.collection__text {
+    margin-left: 24px;
+}
+
+.collection__name-title {
+    font-size: 24px;
+    line-height: calc(30 / 24);
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.collection__vol {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: #818698;
+}
+
+.collection__name {
+    margin-bottom: 16px;
+}
+
+.collection__volume {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.collection__crypto {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: #FFFFFF;
+}
+
+.collection__growth {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    color: #52FFE0;
+}
+
+.collection__item--desktop {
+    @media screen and(max-width: 1919px) {
+        display: none;
+    }
+}
+
+.collection__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2C2D31;
+    background-color: #52FFE0;
+    transition: box-shadow 200ms linear, background-color 200ms linear, color 200ms linear;
+    border-radius: 50px;
+    padding: 15px 20px;
+
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: -3px -1px 8px 7px rgba(24, 81, 84, 0.45) inset;
+        background-color: #7F1CFC;
+        color: #fff;
+    }
+}
