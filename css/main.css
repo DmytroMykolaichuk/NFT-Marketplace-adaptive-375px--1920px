@@ -9,6 +9,11 @@
   src: url("../fonts/BebasNeueBold.woff") format("woff");
   font-weight: 700;
 }
+@font-face {
+  font-family: "Monument Extended";
+  src: url("../fonts/MonumentExtended-Ultrabold.otf") format("otf"), url("../fonts/MonumentExtended-Regular.otf") format("otf");
+  font-weight: 700, 400;
+}
 h1,
 h2,
 h3,
