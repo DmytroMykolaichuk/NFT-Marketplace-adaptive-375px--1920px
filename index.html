@@ -44,32 +44,34 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="./index.html" class="logo">Qeeb</a>
-        <button class="header__menu-btn" type="button">
-          <svg class="header__icon-menu-btn">
-            <use href="./images/icons.svg#menu"></use>
-          </svg>
-        </button>
-        <div class="header__wrap">
-          <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__item"><a href="#explore" class="header__link">Explore</a></li>
-              <li class="header__item"><a href="#collections" class="header__link">Collections</a></li>
-              <li class="header__item"><a href="#creators" class="header__link">Creators</a></li>
-              <li class="header__item"><a href="#blog" class="header__link">Blog</a></li>
-            </ul>
-          </nav>
-          <button class="header__btn-wallet" type="button">Connect Wallet</button>
+        <div class="header__absolute">
+          <a href="./index.html" class="logo">Qeeb</a>
+          <button class="header__menu-btn" type="button">
+            <svg class="header__icon-menu-btn">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+          <div class="header__wrap">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item"><a href="#explore" class="header__link">Explore</a></li>
+                <li class="header__item"><a href="#collections" class="header__link">Collections</a></li>
+                <li class="header__item"><a href="#creators" class="header__link">Creators</a></li>
+                <li class="header__item"><a href="#blog" class="header__link">Blog</a></li>
+              </ul>
+            </nav>
+            <button class="header__btn-wallet" type="button">Connect Wallet</button>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero__container">
           <span class="hero__text">NFT Marketplace</span>
           <h1 class="hero__title">Collect rare digital artworks</h1>
           <button class="hero__btn-explore" type="button">Explore</button>
-          <img src="./images/hero.png" alt="nft" />
+          <div class="hero__thumb"></div>
           <div class="hero__wrap" id="explore">
             <div class="hero__man">
               <ul class="hero__man-list">
@@ -152,6 +154,16 @@
       <section class="collection">
         <div class="container">
           <h2 class="collection_title">top collection</h2>
+          <form class="collection__form">
+            <label class="collection__label">
+              <input class="collection__input" type="radio" name="filter" value="7 Days" checked />
+              <span class="collection__new-button">7 Days</span>
+            </label>
+            <label class="collection__label">
+              <input class="collection__input" type="radio" name="filter" value="30 Days" />
+              <span class="collection__new-button">30 Days</span>
+            </label>
+          </form>
           <ul class="collection__list">
             <li class="collection__item">
               <div class="collection__thumb">
@@ -410,18 +422,60 @@
       <section class="blog" id="blog">
         <div class="container">
           <h2 class="blog__title">Blog</h2>
-          <div class="blog__thumb"><img src="./images/blog-mobile.png" alt="banner" /></div>
-          <div class="blog__info">
-            <span class="blog__sound">Sound Record</span>
-            <span class="blog__name">John Doe • 19 Jan 2022</span>
-          </div>
-          <p class="blog__text">Gesture for the people and the culture</p>
-          <button class="blog__btn">
-            Read More
-            <svg class="blog__icon" width="16" height="16">
-              <use href="./images/icons.svg#read-more"></use>
-            </svg>
-          </button>
+          <h2 class="blog__insights">Insights</h2>
+          <ul class="blog__list">
+            <li class="blog__item">
+              <div class="blog__thumb"></div>
+              <div class="blog__info">
+                <div class="blog__events">
+                  <span class="blog__sound">Sound Record</span>
+                  <span class="blog__thema">TECHNOLOGY</span>
+                  <span class="blog__name">John Doe • 19 Jan 2022</span>
+                </div>
+                <p class="blog__text">Gesture for the people and the culture</p>
+                <button class="blog__btn">
+                  Read More
+                  <svg class="blog__icon" width="16" height="16">
+                    <use href="./images/icons.svg#read-more"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="blog__item blog__item-desktop">
+              <div class="blog__thumb blog__thumb-dt-two"></div>
+              <div class="blog__info">
+                <div class="blog__events">
+                  <span class="blog__thema">Webiner</span>
+                  <span class="blog__name">John Doe • 19 Jan 2022</span>
+                </div>
+                <p class="blog__text">
+                  Mostly metaverse is only as good as its tools and it is totally true.
+                </p>
+                <button class="blog__btn">
+                  Read More
+                  <svg class="blog__icon" width="16" height="16">
+                    <use href="./images/icons.svg#read-more"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="blog__item blog__item-desktop">
+              <div class="blog__thumb blog__thumb-dt-three"></div>
+              <div class="blog__info">
+                <div class="blog__events">
+                  <span class="blog__thema">Crypto Currency</span>
+                  <span class="blog__name">John Doe • 19 Jan 2022</span>
+                </div>
+                <p class="blog__text">Crypto business is only as good as its tools and it is totally true.</p>
+                <button class="blog__btn">
+                  Read More
+                  <svg class="blog__icon" width="16" height="16">
+                    <use href="./images/icons.svg#read-more"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="download">

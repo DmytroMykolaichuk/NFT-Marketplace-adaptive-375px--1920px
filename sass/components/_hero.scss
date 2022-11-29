@@ -1,8 +1,59 @@
 .hero{
-    padding-top: 65px;
+    padding-top: 153px;
     padding-bottom: 80px;
     background-color: #101010;
+
+    @media screen and(min-width: 1920px) {
+        padding-top: 250px;
+        padding-right: 10px;
+        padding-bottom: 204px;
+    }
 }
+
+.hero__container{
+    position: relative;
+}
+
+.hero__thumb{
+    position: absolute;
+    left: 0px;
+    top: 276px;
+    max-width: 397px;
+    width: 100%;
+    height: 387px;
+    background-image: url("../images/hero-desktop.png"), url("../images/hero-fon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 322px 315px, 397px 387px;
+    
+    @media screen and(min-width: 1920px) {
+        left: 895px;
+        top: -166px;
+        max-width: 953px;
+        height: 931px;
+        background-image: url("../images/hero-desktop.png"), url("../images/hero-fon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 775px 757px, 953px 931px;
+    }
+    
+    &::after {
+        content: " ";
+        position: absolute;
+        bottom: 55px;
+        left: -20px;
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-image: url("../images/hero-banner-play.png");
+    
+        @media screen and(max-width: 1919px) {
+            display: none;
+        }
+    }
+}
+
+
 
 .hero__text{
     display: block;
@@ -12,9 +63,13 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 16px;
+
+    @media screen and(min-width: 1920px) {
+        font-size: 36px;
+        line-height: calc(43 / 36);
+        text-align: start;
+    }
 }
 
 .hero__title{
@@ -25,10 +80,16 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #FFFFFF;
-    max-width: 294px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
     margin-bottom: 51px;
+
+    @media screen and(min-width: 1920px) {
+        font-size: 72px;
+        line-height: calc(86 / 72);
+        max-width: 704px;
+        text-align: start;
+        margin-bottom: 64px;
+    }
 }
 
 .hero__btn-explore{
@@ -36,10 +97,11 @@
     font-weight: 700;
     font-size: 18px;
     line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
     text-align: center;
     background-color: #52FFE0;
     border-radius: 50px;
-    padding: 19px 40px;
+    padding: 19px 39px;
     margin-left: auto;
     margin-right: auto;
     transition: box-shadow 200ms linear, background-color 200ms linear, color 200ms linear;
@@ -50,28 +112,59 @@
         background-color: #7F1CFC;
         color: #fff;
     }
+
+    @media screen and(max-width: 1919px){
+        margin-bottom: 437px;
+    }
+
+    @media screen and(min-width:1920px) {
+        display: inline-block;
+        margin-bottom: 80px;
+    }
 }
 
 .hero__wrap{
     display: flex;
-justify-content: center;
+    justify-content: center;
+
+    @media screen and(min-width: 1920px){
+        justify-content: flex-start;
+    }
 }
 
 .hero__man{
     position: relative;
     margin-right: 52px;
+
+    @media screen and(min-width: 1920px) {
+        position: absolute;
+        top: 386px;
+        left: 348px;
+    }
 }
 
 .hero__man--second{
     position: absolute;
     left: 0;
     top: 34px;
+
+    @media screen and(min-width: 1920px) {
+        left: 34px;
+        top: 0px;
+        width: 100%;
+    }
 }
 
 .hero__man--third{
     position: absolute;
     left: 0;
     top: 68px;
+
+    @media screen and(min-width: 1920px) {
+        left: 68px;
+        top: 0px;
+        width: 100%;
+    }
 }
 
 .hero__arrow{
@@ -80,7 +173,13 @@ justify-content: center;
     left: 20px;
     width: 95px;
     height: 74px;
-    transform: rotate(-10deg)
+    
+
+    @media screen and(min-width: 1920px) {
+        bottom: -80px;
+        left: 105px;
+        transform: rotate(6deg);
+    }
 }
 
 .hero__statistics-list {
@@ -89,6 +188,12 @@ justify-content: center;
     justify-content: center;
     flex-direction: column;
     gap: 32px;
+
+    @media screen and(min-width: 1920px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 116px;
+    }
 }
 
 .hero__statistics-number {

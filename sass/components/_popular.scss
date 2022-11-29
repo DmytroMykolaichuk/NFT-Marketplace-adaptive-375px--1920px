@@ -1,5 +1,6 @@
 .popular{
     padding-bottom: 40px;
+    padding-bottom: 120px;
 }
 
 .popular__title{
@@ -11,4 +12,9 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 24px;
+
+    @media screen and(min-width: 1920px) {
+        text-align: start;
+        margin-bottom: 72px;
+    }
 }
