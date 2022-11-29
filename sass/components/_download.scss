@@ -1,6 +1,26 @@
 .download {
     padding-top: 80px;
     padding-bottom: 80px;
+
+    @media screen and(min-width: 1920px) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+.download__fone-dt{
+    @media screen and(min-width: 1920px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 72px;
+        padding-right: 240px;
+        padding-bottom: 96px;
+        padding-top: 96px;
+        background: #1D1E22;
+        border: 1px solid #000000;
+        border-radius: 50px;
+    }
 }
 
 .download__title {
@@ -11,6 +31,14 @@
     letter-spacing: 0.04em;
     color: #FFFFFF;
     margin-bottom: 56px;
+
+    @media screen and(min-width: 1920px){
+        font-size: 30px;
+        line-height: calc(36 / 30);
+        max-width: 550px;
+        margin-bottom: 0;
+        text-align: start;
+    }
 }
 
 .download__app {
@@ -33,6 +61,16 @@
     margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
+    transition: box-shadow 250ms linear;
+
+    &:hover,
+    &:focus{
+        box-shadow: 0px 0px 9px 5px rgba(255, 255, 255, 0.75);
+    }
+
+    @media screen and(min-width: 1920px){
+        margin: 0;
+    }
 }
 
 .download__google {
@@ -54,4 +92,18 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    transition: box-shadow 250ms linear;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 0px 9px 5px #52ffdf75;
+    }
+}
+
+.download__pay{
+    @media screen and(min-width: 1920px){
+        display: flex;
+        margin-left: auto;
+        gap: 16px;
+    }
 }

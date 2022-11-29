@@ -433,10 +433,11 @@
                   <span class="blog__name">John Doe • 19 Jan 2022</span>
                 </div>
                 <p class="blog__text">Gesture for the people and the culture</p>
-                <button class="blog__btn">
+                <button type="button" class="blog__btn">
                   Read More
-                  <svg class="blog__icon" width="16" height="16">
-                    <use href="./images/icons.svg#read-more"></use>
+                  <svg class="blog__icon">
+                    <use class="read-more-mobile" href="./images/icons.svg#read-more"></use>
+                    <use class="read-more-dt" href="./images/icons.svg#read-more-dt"></use>
                   </svg>
                 </button>
               </div>
@@ -451,10 +452,10 @@
                 <p class="blog__text">
                   Mostly metaverse is only as good as its tools and it is totally true.
                 </p>
-                <button class="blog__btn">
+                <button type="button" class="blog__btn">
                   Read More
-                  <svg class="blog__icon" width="16" height="16">
-                    <use href="./images/icons.svg#read-more"></use>
+                  <svg class="blog__icon">
+                    <use class="read-more-dt" href="./images/icons.svg#read-more-dt"></use>
                   </svg>
                 </button>
               </div>
@@ -467,10 +468,10 @@
                   <span class="blog__name">John Doe • 19 Jan 2022</span>
                 </div>
                 <p class="blog__text">Crypto business is only as good as its tools and it is totally true.</p>
-                <button class="blog__btn">
+                <button type="button" class="blog__btn">
                   Read More
-                  <svg class="blog__icon" width="16" height="16">
-                    <use href="./images/icons.svg#read-more"></use>
+                  <svg class="blog__icon">
+                    <use class="read-more-dt" href="./images/icons.svg#read-more-dt"></use>
                   </svg>
                 </button>
               </div>
@@ -480,44 +481,84 @@
       </section>
       <section class="download">
         <div class="container">
-          <h2 class="download__title">Download Qeeb app to track your NFT portfolio and discover more</h2>
-          <a
-            href="https://www.apple.com/ua/app-store/"
-            class="download__app"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <svg class="download__app-icon" width="30" height="30">
-              <use href="./images/icons.svg#app"></use>
-            </svg>
-            App Store
-          </a>
-          <a
-            class="download__google"
-            href="https://pay.google.com/intl/uk_ua/about/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <svg class="download__google-icon" width="30" height="30">
-              <use href="./images/icons.svg#google"></use>
-            </svg>
-            Google Play
-          </a>
+          <div class="download__fone-dt">
+            <h2 class="download__title">Download Qeeb app to track your NFT portfolio and discover more</h2>
+            <div class="download__pay">
+              <a
+                href="https://www.apple.com/ua/app-store/"
+                class="download__app"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="download__app-icon" width="30" height="30">
+                  <use href="./images/icons.svg#app"></use>
+                </svg>
+                App Store
+              </a>
+              <a
+                class="download__google"
+                href="https://pay.google.com/intl/uk_ua/about/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="download__google-icon" width="30" height="30">
+                  <use href="./images/icons.svg#google"></use>
+                </svg>
+                Google Play
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <form class="footer__form">
-          <h2 class="footer__form-title">Sign Up to Receive Product Updates and More</h2>
-          <label class="footer__label">
-            <input type="email" class="footer__input" placeholder="youremail@gmail.com" name="email" />
-            <svg class="footer__input-icon" width="24" height="24">
-              <use href="./images/icons.svg#send"></use>
-            </svg>
-          </label>
-          <button type="submit" class="footer__form-btn">Send</button>
-        </form>
+        <div class="footer__top-wrap">
+          <a href="./index.html" class="logo logo__footer">Qeeb</a>
+          <div class="footer__links-wrap">
+            <div class="footer__quick">
+              <h3 class="footer__quick-title">Quick Links</h3>
+              <ul class="footer__quick-list">
+                <li class="footer__quick-item"><a href="#" class="footer__quick-link">About us</a></li>
+                <li class="footer__quick-item"><a href="#" class="footer__quick-link">Services</a></li>
+                <li class="footer__quick-item"><a href="#" class="footer__quick-link">API</a></li>
+                <li class="footer__quick-item">
+                  <a href="#" class="footer__quick-link">Become a Partner</a>
+                </li>
+                <li class="footer__quick-item"><a href="#" class="footer__quick-link">Branding</a></li>
+                <li class="footer__quick-item"><a href="#" class="footer__quick-link">Career</a></li>
+              </ul>
+            </div>
+            <div class="footer__marketplace">
+              <h3 class="footer__marketplace-title">Marketplace</h3>
+              <ul class="footer__marketplace-list">
+                <li class="footer__marketplace-item">
+                  <a href="#" class="footer__marketplace-link">Explore</a>
+                </li>
+                <li class="footer__marketplace-item">
+                  <a href="#" class="footer__marketplace-link">How it works</a>
+                </li>
+                <li class="footer__marketplace-item">
+                  <a href="#" class="footer__marketplace-link">Insights</a>
+                </li>
+                <li class="footer__marketplace-item">
+                  <a href="#" class="footer__marketplace-link">Help Center</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form class="footer__form">
+            <h2 class="footer__form-title">Sign Up to Receive Product Updates and More</h2>
+            <h2 class="footer__forn-title-dt">Sign Up to Receive Updates Services</h2>
+            <label class="footer__label">
+              <input type="email" class="footer__input" placeholder="youremail@gmail.com" name="email" />
+              <svg class="footer__input-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </label>
+            <button type="submit" class="footer__form-btn">Send</button>
+          </form>
+        </div>
         <address class="address">
           <h2 class="address__title">Office</h2>
           <a href="https://goo.gl/maps/8pqed2nRphVhpJ5W7" class="address__link"
@@ -533,40 +574,71 @@
             <a class="footer__contact-link" href="mailto:ouraddress@email.com">ouraddress@email.com</a>
           </li>
         </ul>
-        <ul class="footer__policy">
-          <li class="footer_policy-item"><a class="footer__policy-link" href="#">Terms & Conditions</a></li>
-          <li class="footer_policy-item"><a class="footer__policy-link" href="#">Privacy</a></li>
-        </ul>
-        <ul class="footer__soc">
-          <li class="footer__soc-item">
-            <a href="" class="footer__soc-link">
-              <svg class="footer__soc-icon" width="24" height="24">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__soc-item">
-            <a href="" class="footer__soc-link">
-              <svg class="footer__soc-icon" width="24" height="24">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__soc-item">
-            <a href="" class="footer__soc-link">
-              <svg class="footer__soc-icon" width="24" height="24">
-                <use href="./images/icons.svg#dribbble"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__soc-item">
-            <a href="" class="footer__soc-link">
-              <svg class="footer__soc-icon" width="24" height="24">
-                <use href="./images/icons.svg#github"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="footer__bottom-wrap">
+          <p class="footer__bottom-wrap-text">Qeeb 2022. All Rights Reserved</p>
+          <ul class="footer__policy">
+            <li class="footer_policy-item"><a class="footer__policy-link" href="#">Terms & Conditions</a></li>
+            <li class="footer_policy-item"><a class="footer__policy-link" href="#">Privacy</a></li>
+          </ul>
+          <ul class="footer__soc">
+            <li class="footer__soc-item">
+              <a href="" class="footer__soc-link">
+                <svg class="footer__soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soc-item">
+              <a href="" class="footer__soc-link">
+                <svg class="footer__soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soc-item footer__soc-item-mobile">
+              <a href="" class="footer__soc-link">
+                <svg class="footer__soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#dribbble"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soc-item footer__soc-item-mobile">
+              <a href="" class="footer__soc-link">
+                <svg class="footer__soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soc-item footer__soc-item-dt">
+              <a href="" class="footer__soc-link">
+                <svg class="footer__soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soc-item footer__soc-item-dt">
+              <a href="" class="footer__soc-link">
+                <svg class="footer__soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soc-item footer__soc-item-dt">
+              <a href="" class="footer__soc-link">
+                <svg class="footer__soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#tiktok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__soc-item footer__soc-item-dt">
+              <a href="" class="footer__soc-link">
+                <svg class="footer__soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
         <p class="footer__copyright">Copyright 2022. All Rights Reserved</p>
       </div>
     </footer>
